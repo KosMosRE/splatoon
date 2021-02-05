@@ -1,0 +1,36 @@
+spring:
+  profiles:
+    include:
+      - xxl
+      - db
+  application:
+    name: wechat-robot
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 100MB
+      max-request-size: 100MB
+      resolve-lazily: false
+  jpa:
+    show-sql: true
+server:
+  port: 8191
+  servlet:
+    contextPath: /api
+  tomcat:
+    uri-encoding: UTF-8
+
+# log config
+logging:
+  config: classpath:logback.xml
+  level:
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
+
+ali:
+  gd:
+    key: 91dc181967e50d58d8a5182d56250444
+wechat:
+  robot:
+    address:
+      feng: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=ea3f0eb6-7715-43bb-863e-1da1700459f3
+      qian: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=9bf71cb4-f1c7-4536-b7e7-564cc985ac85

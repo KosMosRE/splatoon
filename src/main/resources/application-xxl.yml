@@ -1,0 +1,13 @@
+### xxl-job admin address list, such as "http://address" or "http://address01,http://address02"
+xxl:
+  job:
+    accessToken:
+    executor:
+      appname: xxl-job-executor-robot
+      ip:
+      address:
+      port: 9999
+      logpath: applogs/xxl-job/jobhandler
+      logretentiondays: 30
+    admin:
+      addresses: http://127.0.0.1:8891/xxl-job-admin

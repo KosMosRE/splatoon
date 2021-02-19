@@ -38,5 +38,4 @@ public class WeatherXxlJob {
     }
 
     //chery pick test1
-    //chery pick test2
 }

@@ -36,7 +36,4 @@ public class WeatherXxlJob {
         robotHttp.sendRobotMessage(WeatherHttp.CODE_WUXI);
         return ReturnT.SUCCESS;
     }
-
-    //chery pick test1
-    //chery pick test2
 }
